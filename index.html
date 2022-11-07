@@ -1,54 +1,92 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-    <title>Đây là website đỉnh kow của HFS Team</title>
-    <style>
-        h1 {text-align: center;}
-    </style>
-        
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Beat</title>
+</head>
+<body>
+    <div id="style">
         <style>
-            body {
-                background-color: black;
-            }
-            p {
-                color: white;
-                font-family: Verdana;
-                font-size: 20px;
-            }
-            h1 {
-                color: lightgreen;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 100px;
-            }
+            body{
+    padding:100px 0;
+    background-color:rgb(255, 255, 255)
+  }
+  
+  #heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      animation: heartbeat 1s infinite;
+      margin:0 auto
+  }
+  #heart:before,
+  #heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: rgb(255, 3, 3);
+      -moz-border-radius: 50px 50px 0 0;
+      border-radius: 50px 50px 0 0;
+      -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+           -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      -webkit-transform-origin: 0 100%;
+         -moz-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+           -o-transform-origin: 0 100%;
+              transform-origin: 0 100%;
+  }
+  #heart:after {
+      left: 0;
+      -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transform-origin: 100% 100%;
+         -moz-transform-origin: 100% 100%;
+          -ms-transform-origin: 100% 100%;
+           -o-transform-origin: 100% 100%;
+              transform-origin :100% 100%;
+  }
+  
+  
+  
+  @keyframes heartbeat
+  {
+    0%
+    {
+      transform: scale( .75 );
+    }
+    20%
+    {
+      transform: scale( 1 );
+    }
+    40%
+    {
+      transform: scale( .75 );
+    }
+    60%
+    {
+      transform: scale( 1 );
+    }
+    80%
+    {
+      transform: scale( .75 );
+    }
+    100%
+    {
+      transform: scale( .75 );
+    }
+  }
         </style>
-        <h1>HFS Team</h1>
-        <p>Chào bạn,</p>
-        <p>Cảm ơn bạn đã ghé qua website của chúng tôi giữa ngàn website ngoài kia, </p>
-        <p>Website này được thành lập bởi HFS Team và đồng bọn, chạy trên github.</p>
-        <p>Do kinh phí thấp (và do thằng Ad lười) nên website chỉ có chữ chứ không có ảnh hay video</p>
-        <p>Để được chửi thằng Ad vì lười, hãy truy cập đường link sau: <a href="https://discord.gg/8cdjByEAhV">Discord</a></p>
-        <p>Cảm ơn bạn nhiều ❤️</p>
-        <pre> </pre>
-        <p>Admin, Minh KS</p>
-    </body>
-    <body>
-        <style>
-            p {
-                color: rgb(8, 120, 134);
-                font-family: Verdana;
-                font-size: 20px;
-            }
-        </style>
-        <pre> </pre>
-        <pre> </pre>
-        <pre> </pre>
-        <p>Bunus Video ❤️</p>
-        <pre> </pre>
-        <pre> </pre>
-        <pre> </pre>
-        <iframe class="center" width="960" height="540" src="https://www.youtube.com/embed/B08mIWEb_08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </body>
+    </div>
+</body>
 </html>
